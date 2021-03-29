@@ -1,0 +1,290 @@
+/* root style */
+:root {
+  --primary-color: #789fe9;
+  --secondary-color: #25b349;
+  --tertiary-color: rgb(106, 8, 235);
+  --border-color: teal;
+  --image-text: #0f0f0f;
+  --main-bg-color: rgb(231, 135, 135);
+  --page-margin-right: 10%;
+  --main-content-width: 70%;
+}
+
+html {
+  background-color: var(--primary-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  padding-bottom: 2%;
+}
+
+/* Header Style */
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--tertiary-color);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5% 0 0.5% 0;
+}
+
+/* Title Style */
+.Title {
+  color: var(--tertiary-color);
+  display: flex;
+  font-size: 40px;
+  background-color: var(--primary-color);
+  height: 55px;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 10px;
+}
+
+/* Nav Style */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: var(--page-margin-right);
+  width: 50%;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: var(--primary-color);
+  margin-left: 1.5%;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 4px 4px 4px;
+  border-bottom: 4px solid var(--primary-color);
+}
+
+a:hover {
+  transform: scale(1.1);
+  color: rgb(230, 224, 173);
+  border-color: rgb(230, 224, 173);
+}
+
+/* images 'highligh' on hover */
+img:hover {
+  opacity: 0.6;
+}
+
+/* Image for seperation */
+.N {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  background-image: url(assets/Images/n-bg.jpg);
+  object-fit: cover;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* job title */
+.Nick-Facts {
+  color: var(--tertiary-color);
+  background-color: var(--priamry-color);
+  font-size: 35px;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-right: var(--page-margin-right);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+/* div style*/
+div {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  border-right: 3px solid var(--tertiary-color);
+  padding-right: 2%;
+  font-size: 40px;
+  color: var(--tertiary-color);
+  width: 20%;
+  margin-top: 2%;
+}
+
+/* About Me Style */
+#About-Me {
+  color: var(--tertiary-color);
+  padding-left: 2%;
+  width: var(--main-content-width);
+  margin-right: var(--page-margin-right);
+  margin-top: 2%;
+}
+
+/* Work Style */
+#Work {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: var(--image-text);
+  padding-left: 2%;
+  width: var(--main-content-width);
+  margin-top: 2%;
+  justify-content: space-between;
+  margin-right: var(--page-margin-right);
+}
+
+/* Work Image Style */
+.Work {
+  position: relative;
+  width: 100%;
+}
+
+.Work-Image {
+  width: 100%;
+  height: auto;
+  border: 5px solid var(--secondary-color);
+}
+
+.Work-Image-Text {
+  position: absolute;
+  background-color: var(--border-color);
+  padding: 20px;
+  align-self: flex-end;
+  bottom: 40px;
+}
+
+/* Work Image Style Continued */
+.Work-Image-Text h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* Work 2 Style */
+.Work-2 {
+  position: relative;
+  width: 49%;
+  margin-top: 2%;
+}
+
+/* Work 2 Image Style */
+.Work-2-Image {
+  width: 100%;
+  height: auto;
+  border: 5px solid var(--border-color);
+}
+
+.Work-2-Image-Text {
+  position: absolute;
+  background-color: var(--border-color);
+  padding: 10px;
+  align-self: flex-end;
+  bottom: 20px;
+}
+
+/* COntact Me Style */
+#Contact-Me {
+  margin-top: 2%;
+  width: var(--main-content-width);
+  margin-right: var(--page-margin-right);
+  padding-left: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Contact-Me{
+  color: rgb(0, 196, 196);
+  font-size: 20px;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 4px solid rgb(0, 255, 255);
+}
+
+/* For screens 992px or smaller */
+@media screen and (max-width: 992px) {
+  
+  :root {
+      --page-margin-right: 2.5%;
+  }
+  
+  .title {
+      width: 100%;
+      justify-content: center;
+  }
+  
+  nav {
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    padding: 2%;
+  }
+
+  nav a {
+      margin-left: 0;
+  }
+
+  .N {
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .Nick-Facts{
+      margin: 0;
+      text-align: center;
+  }
+
+  main {
+      justify-content: center;
+  }
+
+  div {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-right: 0;
+      border-bottom: 3px solid var(--tertiary-color);
+      margin-top: 1%;
+      flex-direction: row;
+  }
+
+  div h3 {
+      display: inline-block;
+      margin: 1%;
+  }
+
+  #About-Me {
+      width: 100%;
+  }
+
+  #Work {
+      width: 100%;
+  }
+
+  .Work-2 {
+      width: 100%;
+  }
+
+  #Contact-Me {
+      width: 100%;
+  }
+
+}
+
+/* Mobile Elements */
+@media screen and (max-width: 769px) {
+
+  #contact-me-content a {
+      padding: 4px 4px 4px 4px;
+      margin: 4px; 
+  }
+}
