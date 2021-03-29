@@ -76,15 +76,18 @@ img:hover {
 }
 
 /* Image for seperation */
-.N {
+.N-Image{
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 200px;
-  background-image: url(assets/Images/n-bg.jpg);
+  background-image: url(assets/Images/Background-Image.jpg);
   object-fit: cover;
   align-items: flex-end;
   justify-content: flex-end;
+}
+.N{
+  float: right;
 }
 
 /* job title */
